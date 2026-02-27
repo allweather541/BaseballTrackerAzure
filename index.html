@@ -14,23 +14,46 @@
                     <div class="card-header bg-primary text-white text-center">
                         <h2>⚾ Baseball Stat Tracker</h2>
                     </div>
-                    <div class="card-body text-center">
-                        <p class="lead">Welcome to the central database for monitoring player performance arm health.</p>
+                    <div class="card-body">
+                        <p class="lead text-center">Welcome to the central database for monitoring player performance and arm health.</p>
                         <hr>
                         <form>
                             <div class="mb-3">
-                                <label class="form-label">Player Name</label>
+                                <label class="form-label fw-bold">Player Name</label>
                                 <input type="text" class="form-control" placeholder="Enter player name">
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">Pitch Count</label>
-                                <input type="number" class="form-control" placeholder="Total pitches thrown">
+                            
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label class="form-label fw-bold">Pitch Count</label>
+                                    <input type="number" class="form-control" placeholder="0">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label class="form-label fw-bold">Strikeouts</label>
+                                    <input type="number" class="form-control" placeholder="0">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label class="form-label fw-bold">Walks</label>
+                                    <input type="number" class="form-control" placeholder="0">
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">Upload Scorecard</label>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label fw-bold">Innings Pitched</label>
+                                    <input type="number" step="0.1" class="form-control" placeholder="0.0">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label fw-bold">Earned Runs</label>
+                                    <input type="number" class="form-control" placeholder="0">
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Upload Scorecard</label>
                                 <input class="form-control" type="file">
                             </div>
-                            <button type="button" class="btn btn-success w-100">Submit Entry</button>
+                            <button type="button" class="btn btn-success w-100 fs-5">Submit Entry</button>
                         </form>
                     </div>
                     <div class="card-footer text-muted text-center">
