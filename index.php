@@ -75,6 +75,13 @@ try {
         <div class="row justify-content-center">
             <div class="col-md-8">
                 
+                <div class="text-center mb-4">
+                    <img src="https://baseballstorageacct.blob.core.windows.net/websiteblob/BaseballTracker.png" alt="Baseball Header" class="img-fluid rounded shadow" style="max-height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <?= $message ?>
+
+                <div class="card shadow mb-4">
+                
                 <?= $message ?>
 
                 <div class="card shadow mb-4">
