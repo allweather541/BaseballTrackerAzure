@@ -71,14 +71,13 @@ try {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
-
-    <div class="w-100 mb-4">
-        <img src="https://baseballstorageacct.blob.core.windows.net/websiteblob/BaseballTracker.png" alt="Baseball Header" style="width: 100%; height: auto; display: block;">
-    </div>
     <div class="container mt-4">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 
+                <div class="mb-4 text-center">
+                    <img src="https://baseballstorageacct.blob.core.windows.net/websiteblob/BaseballTracker.png" alt="Baseball Header" class="img-fluid rounded shadow" style="width: 100%; height: auto;">
+                </div>
                 <?= $message ?>
 
                 <div class="card shadow mb-4">
