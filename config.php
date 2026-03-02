@@ -22,7 +22,7 @@ if (!isset($tokenData['access_token'])) {
 }
 $accessToken = $tokenData['access_token'];
 
-// 2. Fetch the password from Key Vault
+// Fetch the password from Key Vault
 $keyVaultName = "YOUR_KEY_VAULT_NAME";
 $secretName = "YOUR_SECRET_NAME";
 $kvUrl = "https://{$keyVaultName}.vault.azure.net/secrets/{$secretName}?api-version=7.4";
@@ -38,6 +38,6 @@ if (!isset($secretData['value'])) {
      die("Security Error: Failed to retrieve secret from Key Vault. Check IAM Access Policies.");
 }
 
-// 3. Set the global variable for index.php to use
+// Set the global variable for index.php to use
 $pwd = $secretData['value'];
 ?>
